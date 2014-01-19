@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment defaultVersion="1070" identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="4514"/>
@@ -691,6 +691,14 @@
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                     </button>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JZO-Lw-Gx1" customClass="KBButton">
+                        <rect key="frame" x="136" y="20" width="106" height="25"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="square" title="Button" bezelStyle="shadowlessSquare" imagePosition="overlaps" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="oje-bR-VXs" customClass="KBButtonCell">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                    </button>
                     <button translatesAutoresizingMaskIntoConstraints="NO" id="555" customClass="KBButton">
                         <rect key="frame" x="20" y="86" width="106" height="25"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -744,6 +752,8 @@
             <connections>
                 <outlet property="dangerButton" destination="610" id="635"/>
                 <outlet property="defaultButton" destination="536" id="597"/>
+                <outlet property="disabled" destination="JZO-Lw-Gx1" id="heh-pM-hhH"/>
+                <outlet property="disabledButton" destination="JZO-Lw-Gx1" id="uAb-iH-U9V"/>
                 <outlet property="infoButton" destination="555" id="599"/>
                 <outlet property="inverseButton" destination="617" id="636"/>
                 <outlet property="primaryButton" destination="569" id="601"/>

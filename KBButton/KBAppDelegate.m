@@ -20,6 +20,8 @@
     [[warningButton cell] setKBButtonType:BButtonTypeWarning];
     [[dangerButton cell] setKBButtonType:BButtonTypeDanger];
     [[inverseButton cell] setKBButtonType:BButtonTypeInverse];
+    
+    [_disabledButton setEnabled:NO];
 }
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification

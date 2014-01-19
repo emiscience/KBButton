@@ -57,7 +57,7 @@
     NSColor *color = [self getColorForButtonType];
     
     // Draw darker overlay if button is pressed
-    if([self isHighlighted]) {
+    if([self isHighlighted] || ![self isEnabled]) {
         [ctx saveGraphicsState];
         [[NSBezierPath bezierPathWithRoundedRect:frame
                                          xRadius:roundedRadius

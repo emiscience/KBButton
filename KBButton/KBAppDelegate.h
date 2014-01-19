@@ -20,5 +20,6 @@
 @property (assign) IBOutlet NSButton *warningButton;
 @property (assign) IBOutlet NSButton *dangerButton;
 @property (assign) IBOutlet NSButton *inverseButton;
+@property (assign) IBOutlet KBButton *disabledButton;
 
 @end
