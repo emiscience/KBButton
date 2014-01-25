@@ -33,4 +33,13 @@
     return YES;
 }
 
+- (IBAction)checked:(id)sender
+{
+    [defaultButton setEnabled:!defaultButton.isEnabled];
+    [primaryButton setEnabled:!primaryButton.isEnabled];
+    [infoButton setEnabled:!infoButton.isEnabled];
+    [successButton setEnabled:!successButton.isEnabled];
+    [warningButton setEnabled:!warningButton.isEnabled];
+    [inverseButton setEnabled:!inverseButton.isEnabled];
+}
 @end

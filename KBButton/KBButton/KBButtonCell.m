@@ -57,12 +57,13 @@
     NSColor *color = [self getColorForButtonType];
     
     // Draw darker overlay if button is pressed
-    if([self isHighlighted] || ![self isEnabled]) {
+    if([self isHighlighted]) {
         [ctx saveGraphicsState];
         [[NSBezierPath bezierPathWithRoundedRect:frame
                                          xRadius:roundedRadius
                                          yRadius:roundedRadius] setClip];
         [[color darkenColorByValue:0.12f] setFill];
+        
         NSRectFillUsingOperation(frame, NSCompositeSourceOver);
         [ctx restoreGraphicsState];
         
@@ -85,7 +86,7 @@
     NSBezierPath* bgPath = [NSBezierPath bezierPathWithRoundedRect:NSInsetRect(frame, 1.0f, 1.0f) xRadius:roundedRadius yRadius:roundedRadius];
     [bgPath setClip];
     
-    NSColor* topColor = [color lightenColorByValue:0.12f];
+    NSColor* topColor =  [self isEnabled] ? [color lightenColorByValue:0.12f] : [color darkenColorByValue:0.12f];
     
     // gradient for inner portion of button
     NSGradient* bgGradient = [[NSGradient alloc] initWithColorsAndLocations:

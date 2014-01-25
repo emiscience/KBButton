@@ -650,14 +650,16 @@
         <window title="KBButton" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="371">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="335" y="390" width="262" height="164"/>
+            <rect key="contentRect" x="335" y="390" width="262" height="199"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1440" height="878"/>
+            <value key="minSize" type="size" width="262" height="199"/>
+            <value key="maxSize" type="size" width="262" height="199"/>
             <view key="contentView" id="372">
-                <rect key="frame" x="0.0" y="0.0" width="262" height="164"/>
+                <rect key="frame" x="0.0" y="0.0" width="262" height="199"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <button translatesAutoresizingMaskIntoConstraints="NO" id="536" customClass="KBButton">
-                        <rect key="frame" x="20" y="119" width="106" height="25"/>
+                        <rect key="frame" x="20" y="154" width="106" height="25"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="106" id="541"/>
@@ -668,7 +670,7 @@
                         </buttonCell>
                     </button>
                     <button translatesAutoresizingMaskIntoConstraints="NO" id="610" customClass="KBButton">
-                        <rect key="frame" x="136" y="119" width="106" height="25"/>
+                        <rect key="frame" x="136" y="154" width="106" height="25"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="square" title="Button" bezelStyle="shadowlessSquare" imagePosition="overlaps" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="612" customClass="KBButtonCell">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -676,7 +678,7 @@
                         </buttonCell>
                     </button>
                     <button translatesAutoresizingMaskIntoConstraints="NO" id="617" customClass="KBButton">
-                        <rect key="frame" x="136" y="84" width="106" height="25"/>
+                        <rect key="frame" x="136" y="119" width="106" height="25"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="square" title="Button" bezelStyle="shadowlessSquare" imagePosition="overlaps" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="619" customClass="KBButtonCell">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -684,7 +686,7 @@
                         </buttonCell>
                     </button>
                     <button translatesAutoresizingMaskIntoConstraints="NO" id="626" customClass="KBButton">
-                        <rect key="frame" x="136" y="53" width="106" height="25"/>
+                        <rect key="frame" x="136" y="88" width="106" height="25"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="square" title="Button" bezelStyle="shadowlessSquare" imagePosition="overlaps" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="628" customClass="KBButtonCell">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -692,7 +694,7 @@
                         </buttonCell>
                     </button>
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JZO-Lw-Gx1" customClass="KBButton">
-                        <rect key="frame" x="136" y="20" width="106" height="25"/>
+                        <rect key="frame" x="136" y="55" width="106" height="25"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="square" title="Button" bezelStyle="shadowlessSquare" imagePosition="overlaps" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="oje-bR-VXs" customClass="KBButtonCell">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -700,7 +702,7 @@
                         </buttonCell>
                     </button>
                     <button translatesAutoresizingMaskIntoConstraints="NO" id="555" customClass="KBButton">
-                        <rect key="frame" x="20" y="86" width="106" height="25"/>
+                        <rect key="frame" x="20" y="121" width="106" height="25"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="square" title="Button" bezelStyle="shadowlessSquare" imagePosition="overlaps" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="560" customClass="KBButtonCell">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -708,7 +710,7 @@
                         </buttonCell>
                     </button>
                     <button translatesAutoresizingMaskIntoConstraints="NO" id="569" customClass="KBButton">
-                        <rect key="frame" x="20" y="53" width="106" height="25"/>
+                        <rect key="frame" x="20" y="88" width="106" height="25"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="square" title="Button" bezelStyle="shadowlessSquare" imagePosition="overlaps" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="574" customClass="KBButtonCell">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -716,12 +718,23 @@
                         </buttonCell>
                     </button>
                     <button translatesAutoresizingMaskIntoConstraints="NO" id="583" customClass="KBButton">
-                        <rect key="frame" x="20" y="20" width="106" height="25"/>
+                        <rect key="frame" x="20" y="53" width="106" height="25"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="square" title="Button" bezelStyle="shadowlessSquare" imagePosition="overlaps" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="588" customClass="KBButtonCell">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
+                    </button>
+                    <button ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2ih-2b-oxf">
+                        <rect key="frame" x="90" y="18" width="72" height="18"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="check" title="Enabled" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="9wW-CW-qZV">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="checked:" target="494" id="sEE-ha-o7n"/>
+                        </connections>
                     </button>
                 </subviews>
                 <constraints>
@@ -743,8 +756,9 @@
                     <constraint firstAttribute="trailing" secondItem="610" secondAttribute="trailing" constant="20" symbolic="YES" id="639"/>
                     <constraint firstItem="626" firstAttribute="leading" secondItem="555" secondAttribute="trailing" constant="10" symbolic="YES" id="640"/>
                     <constraint firstAttribute="trailing" secondItem="626" secondAttribute="trailing" constant="20" symbolic="YES" id="641"/>
-                    <constraint firstAttribute="bottom" secondItem="583" secondAttribute="bottom" constant="20" symbolic="YES" id="643"/>
+                    <constraint firstAttribute="bottom" secondItem="583" secondAttribute="bottom" constant="53" id="643"/>
                     <constraint firstItem="626" firstAttribute="baseline" secondItem="569" secondAttribute="baseline" id="647"/>
+                    <constraint firstAttribute="bottom" secondItem="2ih-2b-oxf" secondAttribute="bottom" constant="20" id="7hq-wJ-gTp"/>
                 </constraints>
             </view>
         </window>

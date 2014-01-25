@@ -22,4 +22,6 @@
 @property (assign) IBOutlet NSButton *inverseButton;
 @property (assign) IBOutlet KBButton *disabledButton;
 
+- (IBAction)checked:(id)sender;
+
 @end
