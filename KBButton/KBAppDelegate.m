@@ -40,6 +40,7 @@
     [infoButton setEnabled:!infoButton.isEnabled];
     [successButton setEnabled:!successButton.isEnabled];
     [warningButton setEnabled:!warningButton.isEnabled];
+    [dangerButton setEnabled:!dangerButton.isEnabled];
     [inverseButton setEnabled:!inverseButton.isEnabled];
 }
 @end
