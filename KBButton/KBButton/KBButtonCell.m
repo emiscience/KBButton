@@ -86,7 +86,7 @@
     NSBezierPath* bgPath = [NSBezierPath bezierPathWithRoundedRect:NSInsetRect(frame, 1.0f, 1.0f) xRadius:roundedRadius yRadius:roundedRadius];
     [bgPath setClip];
     
-    NSColor* topColor =  [self isEnabled] ? [color lightenColorByValue:0.12f] : [color darkenColorByValue:0.24f];
+    NSColor* topColor =  [self isEnabled] ? [color lightenColorByValue:0.12f] : [color darkenColorByValue:0.18f];
     
     // gradient for inner portion of button
     NSGradient* bgGradient = [[NSGradient alloc] initWithColorsAndLocations:
@@ -105,10 +105,11 @@
     NSMutableAttributedString *attrString = [title mutableCopy];
     [attrString beginEditing];
     NSColor *titleColor;
+    
     if ([[self getColorForButtonType] isLightColor]) {
         titleColor = [self isEnabled] ? [NSColor blackColor] : [NSColor disabledControlTextColor];
     } else {
-        titleColor = [self isEnabled] ? [NSColor whiteColor] : [NSColor colorWithCalibratedRed:0.69 green:0.69 blue:0.69 alpha:1.00];
+        titleColor = [self isEnabled] ? [NSColor whiteColor] : [NSColor controlHighlightColor];
     }
     
     [attrString addAttribute:NSForegroundColorAttributeName value:titleColor range:NSMakeRange(0, [[self title] length])];
